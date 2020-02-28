@@ -11,9 +11,9 @@ namespace TacitusLogger.Contributors.MachineInfo
         {
             return self.Custom(new MachineInfoContributor(name), isActive);
         }
-        public static ILogContributorsBuilder MachineInfo(this ILogContributorsBuilder self, bool isActive = true, string name = "Machine info")
+        public static ILogContributorsBuilder MachineInfo(this ILogContributorsBuilder self, string name = "Machine info")
         {
-            return self.Custom(new MachineInfoContributor(name), isActive);
+            return self.Custom(new MachineInfoContributor(name), true);
         }
     }
 }
