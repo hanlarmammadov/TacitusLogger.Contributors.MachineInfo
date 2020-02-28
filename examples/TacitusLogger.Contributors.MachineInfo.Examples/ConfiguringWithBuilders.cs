@@ -24,17 +24,17 @@ namespace TacitusLogger.Contributors.MachineInfo.Examples
                                              .Console().Add()
                                          .BuildLogger();
         }
-        //public void Explicitly_Specifying_Mutable_Status_Of_Machine_Info_Contributor()
-        //{
-        //    MutableSetting<bool> status = Setting<bool>.From.Variable(true);
+        public void Explicitly_Specifying_Mutable_Status_Of_Machine_Info_Contributor()
+        {
+            MutableSetting<bool> status = Setting<bool>.From.Variable(true);
 
-        //    Logger logger = LoggerBuilder.Logger()
-        //                                 .Contributors()
-        //                                     .MachineInfo(status)
-        //                                 .BuildContributors()
-        //                                 .ForAllLogs()
-        //                                     .Console().Add()
-        //                                 .BuildLogger();
-        //}
+            Logger logger = LoggerBuilder.Logger()
+                                         .Contributors()
+                                             .MachineInfo(status)
+                                         .BuildContributors()
+                                         .ForAllLogs()
+                                             .Console().Add()
+                                         .BuildLogger();
+        }
     }
 }
