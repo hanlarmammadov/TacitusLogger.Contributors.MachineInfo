@@ -2,9 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.1.0</Version>
+    <Version>0.2.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Khanlar Mammadov</Authors>
+    <Description>Extension contributor for TacitusLogger that generates additional info related to the machine on which the log was produced. 
+Attention: TacitusLogger.Contributors.MachineInfo is currently in Alpha phase. This means you should not use it in any production code.</Description>
+    <PackageReleaseNotes>Attention: TacitusLogger.Contributors.MachineInfo is currently in Alpha phase. This means you should not use it in any production code.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/khanlarmammadov/TacitusLogger.Contributors.MachineInfo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/khanlarmammadov/TacitusLogger.Contributors.MachineInfo</RepositoryUrl>
+    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\TacitusLogger.Contributors.MachineInfo.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
